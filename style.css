@@ -2182,6 +2182,59 @@ footer {
 }
 
 /* =========================================================
+   MOBILE PROJECT SECTION FIX (3 PROJECTS)
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .project-page {
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 26px 20px;
+  }
+
+  .project-card > div {
+    min-width: 0;
+  }
+
+  .proj-title {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .proj-lead {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .proj-bullets li,
+  .proj-note {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .proj-side {
+    position: static;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 18px;
+    border-top: 1px solid rgba(100, 75, 130, 0.12);
+  }
+
+  .proj-link {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 14px;
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
    ACCESSIBILITY
    ========================================================= */
 
