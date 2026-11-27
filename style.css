@@ -2161,33 +2161,24 @@ footer {
 }
 
 /* MOBILE CONTACT CHIP FIX */
-
 @media (max-width: 700px) {
-
   .hero-contacts {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     align-items: center;
   }
 
   .contact-chip {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
-    max-width: 100%;
     white-space: nowrap;
-    font-size: 9px;
-    padding: 12px 13px;
-    gap: 0;
+    overflow-wrap: normal;
+    font-size: 10px;
+    padding: 10px 14px;
   }
-
-  /* Hide oversized contact icons on mobile */
-  .contact-chip svg {
-    display: none;
-  }
-
 }
 
 /* =========================================================
