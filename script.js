@@ -29,7 +29,7 @@ window.addEventListener(
 
     sections.forEach((section) => {
       if (window.scrollY >= section.offsetTop - 80) {
-        currentId = section.id;
+        currentId = section.dataset.nav || section.id;
       }
     });
 
